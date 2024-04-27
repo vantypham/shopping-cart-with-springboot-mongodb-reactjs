@@ -1,0 +1,110 @@
+[{
+  "_id": "AfNfnhSugK",
+  "status": "PLACED",
+  "date": {
+    "$date": "2023-11-17T20:39:15.762Z"
+  },
+  "totalAmount": 400,
+  "personalInfo": {
+    "name": "Jack Parrow",
+    "email": "jackparrow@gmail.com",
+    "phone": "6412339999",
+    "street": "1000 N 4th ST ",
+    "city": "Fairfield",
+    "zip": "52557"
+  },
+  "paymentInfo": {
+    "creditCardType": "Visa",
+    "number": "1234567890123456",
+    "validDate": "09/2030",
+    "validationCode": "123"
+  },
+  "orderItemList": [
+    {
+      "productNumber": "P1234567",
+      "name": "Red Apple",
+      "quantity": 1,
+      "price": 3
+    },
+    {
+      "productNumber": "P1234568",
+      "name": "Blue Apple",
+      "quantity": 2,
+      "price": 3.5
+    }
+  ],
+  "_class": "com.webstore.domain.Order"
+},
+{
+  "_id": "FGcKYIMiGB",
+  "date": {
+    "$date": "2023-11-17T20:43:35.377Z"
+  },
+  "totalAmount": 400,
+  "personalInfo": {
+    "name": "Jack Parrow",
+    "email": "jackparrow@gmail.com",
+    "phone": "6412339999",
+    "street": "1000 N 4th ST ",
+    "city": "Fairfield",
+    "zip": "52557"
+  },
+  "paymentInfo": {
+    "creditCardType": "Visa",
+    "number": "1234567890123456",
+    "validDate": "09/2030",
+    "validationCode": "123"
+  },
+  "orderItemList": [
+    {
+      "productNumber": "P1234567",
+      "name": "Red Apple",
+      "quantity": 1,
+      "price": 3
+    },
+    {
+      "productNumber": "P1234568",
+      "name": "Blue Apple",
+      "quantity": 2,
+      "price": 3.5
+    }
+  ],
+  "_class": "com.webstore.domain.Order"
+},
+{
+  "_id": "mXIEAzjGmb",
+  "status": "SHIPPED",
+  "date": {
+    "$date": "2023-11-17T20:55:38.235Z"
+  },
+  "totalAmount": 37,
+  "personalInfo": {
+    "name": "Bob The Train",
+    "email": "bob.train@abc.com",
+    "phone": "641-233-1111",
+    "street": "1000 N 4th ST ",
+    "city": "Fairfield",
+    "zip": "52557"
+  },
+  "paymentInfo": {
+    "creditCardType": "Mastercard",
+    "number": "4234567890121111",
+    "validDate": "12/2029",
+    "validationCode": "576"
+  },
+  "orderItemList": [
+    {
+      "productNumber": "P1234567",
+      "name": "Red Apple",
+      "quantity": 10,
+      "price": 3
+    },
+    {
+      "productNumber": "P1234568",
+      "name": "Blue Apple",
+      "quantity": 2,
+      "price": 3.5
+    }
+  ],
+  "_class": "com.webstore.domain.Order"
+}]

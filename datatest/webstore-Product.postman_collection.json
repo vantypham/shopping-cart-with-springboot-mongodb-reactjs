@@ -1,0 +1,172 @@
+{
+	"info": {
+		"_postman_id": "2623fd23-fe39-45f3-a7e5-20144ccd9c2d",
+		"name": "webstore-Product",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30659634"
+	},
+	"item": [
+		{
+			"name": "CreateProduct-P1234567",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productNumber\": \"P1234567\",\n    \"name\": \"Red Grapes\",\n    \"price\": 5.0,\n    \"description\": \"Fresh Red Seedless Grapes, Bag 2.25 lbs per Bag\",\n    \"numberInStock\": 20\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/products"
+			},
+			"response": []
+		},
+		{
+			"name": "CreateProduct-P1234569",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productNumber\": \"P1234569\",\n    \"name\": \"Cosmic Crisp Apples\",\n    \"price\": 1.35,\n    \"description\": \"Fresh Cosmic Crisp Apples per Each\",\n    \"numberInStock\": 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/products"
+			},
+			"response": []
+		},
+		{
+			"name": "CreateProduct-P1234568",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productNumber\": \"P1234568\",\n    \"name\": \"Honeycrisp Apple\",\n    \"price\": 1.30,\n    \"description\": \"Fresh Honeycrisp Apple per Each\",\n    \"numberInStock\": 10\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/products"
+			},
+			"response": []
+		},
+		{
+			"name": "CreateProduct-P1234570",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productNumber\": \"P1234570\",\n    \"name\": \"Seedless Watermelon\",\n    \"price\": 5.62,\n    \"description\": \"Fresh Seedless Watermelon, Each\",\n    \"numberInStock\": 20\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/products"
+			},
+			"response": []
+		},
+		{
+			"name": "GetAllProducts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/products"
+			},
+			"response": []
+		},
+		{
+			"name": "SearchProductsWithNameContainsApple",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/products/search?name=Apple",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"products",
+						"search"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Apple"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetProductDetail-P1234567",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/products/P1234567"
+			},
+			"response": []
+		},
+		{
+			"name": "UpdateProduct-P1234570",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"productNumber\": \"P1234570\",\n    \"name\": \"Seedless Watermelon\",\n    \"price\": 7.69,\n    \"description\": \"Fresh Seedless Watermelon per Each\",\n    \"numberInStock\": 25\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/products/P1234570"
+			},
+			"response": []
+		},
+		{
+			"name": "RemoveProduct-P1234570",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "http://localhost:8080/api/products/P1234570"
+			},
+			"response": []
+		},
+		{
+			"name": "makeReview-P1234567",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\": \"customer104\",\n    \"messasge\": \"I like the color of this product!\",\n    \"rate\": \"5 - EXCELLENT\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/products/P1234567"
+			},
+			"response": []
+		}
+	]
+}

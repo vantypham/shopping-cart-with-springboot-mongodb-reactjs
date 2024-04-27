@@ -1,0 +1,116 @@
+{
+	"info": {
+		"_postman_id": "b85c54d3-3705-4f64-90a0-bfd6ad934399",
+		"name": "webstore-Order",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "30659634"
+	},
+	"item": [
+		{
+			"name": "CreateOrder",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"totalAmount\": 400.0,\n    \"personalInfo\": {\n        \"name\": \"Jack Parrow\",\n        \"email\": \"jackparrow@gmail.com\",\n        \"phone\": \"6412339999\",\n        \"street\": \"1000 N 4th ST \",\n        \"city\": \"Fairfield\",\n        \"zip\": \"52557\"\n    },\n    \"paymentInfo\": {\n        \"creditCardType\": \"Visa\",\n        \"number\": \"1234567890123456\",\n        \"validDate\": \"09/2030\",\n        \"validationCode\": \"123\"\n    },\n    \"orderItemList\":[\n        {\"productNumber\": \"P1234567\", \"name\": \"Red Apple\", \"quantity\": 1, \"price\": 3.0},\n        {\"productNumber\": \"P1234568\", \"name\": \"Blue Apple\", \"quantity\": 2, \"price\": 3.5}\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/orders"
+			},
+			"response": []
+		},
+		{
+			"name": "CreateOrder2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"totalAmount\": 37.0,\n    \"personalInfo\": {\n        \"name\": \"Bob The Train\",\n        \"email\": \"bob.train@abc.com\",\n        \"phone\": \"641-233-1111\",\n        \"street\": \"1000 N 4th ST \",\n        \"city\": \"Fairfield\",\n        \"zip\": \"52557\"\n    },\n    \"paymentInfo\": {\n        \"creditCardType\": \"Mastercard\",\n        \"number\": \"4234567890121111\",\n        \"validDate\": \"12/2029\",\n        \"validationCode\": \"576\"\n    },\n    \"orderItemList\":[\n        {\"productNumber\": \"P1234567\", \"name\": \"Red Apple\", \"quantity\": 10, \"price\": 3.0},\n        {\"productNumber\": \"P1234568\", \"name\": \"Blue Apple\", \"quantity\": 2, \"price\": 3.5}\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/orders"
+			},
+			"response": []
+		},
+		{
+			"name": "GetOrderByOrderId",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": "http://localhost:8080/api/orders/mXIEAzjGmb"
+			},
+			"response": []
+		},
+		{
+			"name": "SearchByStatus=PLACED",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/orders/search?status=PLACED",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"orders",
+						"search"
+					],
+					"query": [
+						{
+							"key": "status",
+							"value": "PLACED"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetALLOrders",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8080/api/orders"
+			},
+			"response": []
+		},
+		{
+			"name": "ChangeStatusToSHIPPED",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"status\": \"SHIPPED\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/api/orders/mXIEAzjGmb"
+			},
+			"response": []
+		}
+	]
+}

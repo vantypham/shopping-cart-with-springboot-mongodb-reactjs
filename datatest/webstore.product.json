@@ -1,0 +1,44 @@
+[{
+  "_id": "P1234568",
+  "name": "Honeycrisp Apple",
+  "price": 1.3,
+  "description": "Fresh Honeycrisp Apple per Each",
+  "numberInStock": 10,
+  "reviewList": [],
+  "_class": "com.webstore.domain.Product"
+},
+{
+  "_id": "P1234569",
+  "name": "Cosmic Crisp Apples",
+  "price": 1.35,
+  "description": "Fresh Cosmic Crisp Apples per Each",
+  "numberInStock": 10,
+  "reviewList": [],
+  "_class": "com.webstore.domain.Product"
+},
+{
+  "_id": "P1234567",
+  "name": "Red Grapes",
+  "price": 5,
+  "description": "Fresh Red Seedless Grapes, Bag 2.25 lbs per Bag",
+  "numberInStock": 20,
+  "reviewList": [
+    {
+      "_id": "osvwIZSLRv",
+      "username": "customer103",
+      "rate": "4 - GOOD",
+      "date": {
+        "$date": "2023-11-17T17:05:26.000Z"
+      }
+    },
+    {
+      "_id": "uJNENMHzHw",
+      "username": "customer104",
+      "rate": "5 - EXCELLENT",
+      "date": {
+        "$date": "2023-11-17T17:10:19.514Z"
+      }
+    }
+  ],
+  "_class": "com.webstore.domain.Product"
+}]

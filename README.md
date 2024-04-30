@@ -8,3 +8,7 @@ Webstore application is a simple project with 3 features as below
 - Frontend: React (Components, State, Validation, Form, axios, routing), Redux, Selenium test
 - Backend: Spring Boot, REST, Services, DTO, Repository. JUnit and RestAssured test
 - Database: MongoDB
+
+[![UseCases](https://github.com/vantypham/shopping-cart-with-springboot-mongodb-reactjs/blob/main/Docs/1_UseCases.png)]()
+![Features](https://github.com/vantypham/shopping-cart-with-springboot-mongodb-reactjs/assets/144931805/9373aadc-514f-4805-ae2c-fedf9042c909)
+![Architecture](https://github.com/vantypham/shopping-cart-with-springboot-mongodb-reactjs/assets/144931805/a465d7d4-90a3-47cb-852b-4f2390044ee5)
